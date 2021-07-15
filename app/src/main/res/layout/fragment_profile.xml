@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_180"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:id="@+id/ivProfilePic"
+            android:layout_weight=".3"
+            android:layout_margin="@dimen/dp_20"
+            android:src="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProfileName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:text="Mayank Singh Saini"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProfileEmail"
+                android:layout_gravity="center"
+                android:text="mayankrockz16@gmail.com"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@android:color/black"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:layout_marginVertical="@dimen/dp_10"
+        android:drawableStart="@drawable/ic_settings"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableEnd="@drawable/arrow_right"
+        android:id="@+id/btnSetting"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@android:color/black"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_marginVertical="@dimen/dp_10"
+        android:drawableStart="@drawable/ic_exit"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableEnd="@drawable/arrow_right"
+        android:id="@+id/btnLogout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@android:color/black"/>
+
+</LinearLayout>

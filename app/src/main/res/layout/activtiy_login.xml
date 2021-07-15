@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".65"
+        android:orientation="vertical"
+        android:background="@color/teal_200">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Olx"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/dp_84"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="180dp"
+            ></androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/India"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".35"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_280"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="@dimen/dp_4"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:src="@drawable/google_icon"
+                ></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/btn_google"
+                android:text="@string/google_continue"
+                android:background="@color/white"
+                android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_280"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="@dimen/dp_4"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:src="@drawable/facebook_icon"
+                ></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/facebook_continue"
+                android:background="@color/white"
+                android:id="@+id/btn_fb"
+                android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By continuing you are accepting\nOLX terms and conditions."
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_30"
+            android:textAlignment="center"
+            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatTextView>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
